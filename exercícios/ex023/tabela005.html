@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        tr,th,td{
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        caption{
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+
+        .cnome{
+            background-color: gray;
+        }
+        
+        .csexo{
+            background-color: aquamarine;
+        }
+
+        .cidade{
+            background-color: blue;
+        }
+
+        .cprof{
+            background-color: brown;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class ="cidade" span="2">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Progrmador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Helio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Auxiliar</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>M</td>
+            <td>33</td>
+            <td>Limpeza</td>
+        </tr>
+        <tr>
+            <td>Raul</td>
+            <td>M</td>
+            <td>56</td>
+            <td>Policial</td>
+    </table>
+</body>
+</html>

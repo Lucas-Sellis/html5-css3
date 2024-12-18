@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/*Todas as demais midias*/
+
+/* Typical Device Breakpoints
+
+Extra small mobile: 320–480 pixels for portrait mode on smartphones
+Small tablet: 601–768 pixels for portrait mode on tablets
+Small desktop and laptop: 1025–1280 pixels for small desktops and laptops
+Large desktop and high-resolution screen: 1281–1440 pixels for large desktops and high-resolution screens
+
+*/
+
+@media print { 
+    
+    *{
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    
+    body{
+        background-image: url(../imagens/back-print.jpg);
+       
+    }
+
+    main {
+        border: 2px solid black;
+        width: 600px;
+    }
+
+    main::after{
+        content: "essa impressão foi feita através do site curso em video";
+        text-decoration: overline;
+        text-align: center;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none;}
+    img#tablet {display: none;}
+    img#desktop {display: none;}
+    img#print {display: block;}
+    img#TV {display: none;}
+
+
+}
+
+@media screen and ( min-width: 768px) and ( max-width: 992px) {     /* Tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+            img#phone { display: none;}
+            img#tablet {display: block;}
+            img#desktop {display: none;}
+            img#print {display: none;}
+            img#TV {display: none;}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {      /* PC*/
+    body{
+        background-image: url(../imagens/back-pc.jpg); 
+    }
+        img#phone { display: none; }
+        img#tablet {display: none;}
+        img#desktop {display: block;}
+        img#print {display: none;}
+        img#TV {display: none;}
+
+   
+
+}
+
+@media screen and ( min-width: 1200px) {                            /* Tv */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet {display: none;}
+    img#desktop {display: none;}
+    img#print {display: none;}
+    img#TV {display: block;}
+}
+
+
